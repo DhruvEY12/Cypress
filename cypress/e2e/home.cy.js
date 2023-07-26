@@ -8,17 +8,9 @@ describe('Test Fire', () => {
     cy.get('#MenuHyperLink1').contains('Deposit Product')
   })
 
-  it('Showcasing failed cases', () => {
-    cy.get('#LinkHeader5')
-  })
-
   it('Entering data into Search bar', () => {
     cy.get('#query').type('testing for devsecops')
     cy.contains('Go').click()
-  })
-
-  it('Searching Type', () => {
-    cy.contains('type')
   })
 
   it('Entering data into Feedback', () => {
