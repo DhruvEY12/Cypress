@@ -1,9 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'cypress/base:18.14.1'
-    }
-  }
+  agent any
   stages {
     stage('Cypress-Scan') {
       steps {
