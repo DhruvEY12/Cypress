@@ -4,7 +4,7 @@ pipeline {
     stage('Cypress-Scan') {
       steps {
         sh 'npm ci'
-        sh "npm run test:ci:record"
+        sh "npm run"
       }
     }
   }
