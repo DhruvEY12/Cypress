@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'npm ci'
         sh "npm run"
+        sh "npm run cypress"
       }
     }
   }
