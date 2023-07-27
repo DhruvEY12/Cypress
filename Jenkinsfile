@@ -11,7 +11,7 @@ pipeline {
         }
         stage('e2e Tests') {
             steps {
-                sh 'npx NO_COLOR=1 cypress run'
+                sh 'npx cypress run'
             }
         }
         stage('Deploy') {
