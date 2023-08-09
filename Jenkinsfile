@@ -14,10 +14,5 @@ pipeline {
                 sh 'NO_COLOR=1 npx cypress run'
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
     }
 }
