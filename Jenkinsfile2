@@ -11,7 +11,7 @@ pipeline {
         }
         stage('e2e Tests') {
             steps {
-                sh 'NO_COLOR=1 npx cypress run --reporter json > dalmia_json.py > pure.json'
+                sh 'NO_COLOR=1 npx cypress run --reporter json --reporter-options dalmia_json.py > pure.json'
             }
         }
     }
